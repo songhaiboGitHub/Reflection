@@ -29,7 +29,7 @@ public class ReflectionQuestion {
         //2、创建对象 传统的方法已经不行了
         // new classfullpath();
 
-        //反射模式符合开闭原则 OCP，即在不修改源码的情况下，进行操作
+        //反射模式符合开闭原则 OCP，外部文件配置  即在不修改源码的情况下，来控制程序
 
         //3、传统模式下解决不了就用反射机制
         //(1)加载class类 返回Class对象

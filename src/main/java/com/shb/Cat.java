@@ -6,4 +6,8 @@ public class Cat {
     public void hi() {
         System.out.println("hi   " + name);
     }
+
+    public void cry() {
+        System.out.println(name + "喵喵叫~~");
+    }
 }
