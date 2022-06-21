@@ -64,6 +64,17 @@ public class ReflectionUtils {
 }
 
 class Person {
+    public Person() {
+
+    }
+
+    public Person(String name, int age, String job, double sar) {
+        this.name = name;
+        this.age = age;
+        this.job = job;
+        this.sar = sar;
+    }
+
     //属性
     public String name;
     protected int age;
