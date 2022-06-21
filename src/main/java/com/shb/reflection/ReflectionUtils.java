@@ -57,13 +57,14 @@ public class ReflectionUtils {
         }
         //        12. getAnnotations：以Annotation[]形式返回注解信息
         for (Annotation annotation : personClass.getAnnotations()) {
-            System.out.println(annotation.getClass());
+            System.out.println(annotation);
         }
 
     }
 }
 
-class Person {
+@Deprecated
+class Person implements iA, iB {
     public Person() {
 
     }
@@ -86,7 +87,6 @@ class Person {
 
     }
 
-    @Deprecated
     private void m2() {
 
     }
@@ -98,5 +98,12 @@ class Person {
     void m4() {
 
     }
+}
+
+interface iA {
+
+}
+
+interface iB {
 
 }
