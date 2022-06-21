@@ -97,6 +97,24 @@ public class ReflectionUtils {
             }
         }
     }
+
+    @Test
+//    第四组：java.lang.reflect.Constructor类
+    public void api_04() throws ClassNotFoundException {
+        //得到Class对象
+        Class<?> personClass = Class.forName("com.shb.reflection.Person");
+        //        8. getDeclaredConstructors：获取本类中所有构造器
+        for (Constructor<?> declaredConstructor : personClass.getDeclaredConstructors()) {
+            //        1. getModifiers：以int形式返回修饰符
+            System.out.println(declaredConstructor.getModifiers());
+            //        2. getName：返回构造器名（全类名）
+            System.out.println(declaredConstructor.getName());
+            //        3. getParameterTypes：以Class[]返回参数类型数组
+            for (Class<?> parameterType : declaredConstructor.getParameterTypes()) {
+                System.out.println(parameterType.getName());
+            }
+        }
+    }
 }
 
 @Deprecated
@@ -119,7 +137,7 @@ class Person implements iA, iB {
     private double sar;
 
     //方法
-    public void m1(String A,Integer B) {
+    public void m1(String A, Integer B) {
 
     }
 
