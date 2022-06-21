@@ -119,7 +119,7 @@ class Person implements iA, iB {
     private double sar;
 
     //方法
-    public void m1(String A) {
+    public void m1(String A,Integer B) {
 
     }
 
