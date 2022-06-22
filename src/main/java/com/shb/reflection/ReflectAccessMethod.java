@@ -21,6 +21,7 @@ public class ReflectAccessMethod {
         //应为say方法是私有的所以需要爆破
         say.setAccessible(true);
         Object invoke = say.invoke(o, 100, "张三", '男');
+        //运行类型就是返回值类型 String
         System.out.println(invoke);
         //因为say方法是static可以传null调用
         say.invoke(null, 100, "张三", '男');
